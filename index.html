@@ -9,6 +9,55 @@
 
 <style>
 
+.turbine-section{
+text-align:center;
+padding:80px 20px;
+background:#f4f9f6;
+}
+
+.turbine{
+position:relative;
+width:120px;
+height:120px;
+margin:auto;
+animation:spin 6s linear infinite;
+}
+
+.turbine:hover{
+animation-duration:1.5s;
+}
+
+.blade{
+position:absolute;
+width:8px;
+height:60px;
+background:#2ecc71;
+top:0;
+left:56px;
+transform-origin:bottom center;
+border-radius:4px;
+}
+
+.blade1{ transform:rotate(0deg); }
+.blade2{ transform:rotate(120deg); }
+.blade3{ transform:rotate(240deg); }
+
+.center{
+position:absolute;
+width:20px;
+height:20px;
+background:#145a32;
+border-radius:50%;
+top:50px;
+left:50px;
+}
+
+@keyframes spin{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
+
+</style>
 *{
 margin:0;
 padding:0;
@@ -161,6 +210,20 @@ for urban spaces — generating clean power while blending seamlessly with city 
 
 <section id="about" class="section">
 
+<section class="turbine-section">
+
+<h2>Clean Urban Wind Energy</h2>
+
+<div class="turbine">
+<div class="blade blade1"></div>
+<div class="blade blade2"></div>
+<div class="blade blade3"></div>
+<div class="center"></div>
+</div>
+
+<p>Hover to generate clean energy ⚡</p>
+
+</section>
 <h2>About Verdeon Eco</h2>
 
 <p>
@@ -238,4 +301,5 @@ Join us in building sustainable cities powered by clean local energy.
 
 
 </body>
+
 </html>
